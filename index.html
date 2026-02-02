@@ -2,7 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Performance: DNS Prefetch for faster resource loading -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
       content="Retire in Thailand with confidence. The #1 guide for retiring in Thailand covering visas, cost of living, healthcare, and best retirement locations. Start your Thailand retirement journey today."
@@ -12,8 +24,23 @@
       content="retire in Thailand, retiring in Thailand, Thailand retirement, retire to Thailand, retirement in Thailand, how to retire in Thailand, best places to retire in Thailand, Thailand retirement visa, cost of living Thailand retirement, expat Thailand, retire abroad Thailand, Southeast Asia retirement"
     />
     <meta name="author" content="Retiring in Thailand" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
     <link rel="canonical" href="https://retiringinthailand.com/" />
+
+    <!-- Mobile App Meta for smooth mobile experience -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Retire Thailand" />
+    <meta name="format-detection" content="telephone=no" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -54,16 +81,135 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#1e3a5f" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Optimized font loading with font-display: swap -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Critical CSS for instant first paint -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      header {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+      }
+      .logo span {
+        color: #f4a460;
+      }
+      .mobile-menu-btn {
+        display: none;
+        background: 0 0;
+        border: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        nav {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #1e3a5f;
+          padding: 1rem;
+        }
+        nav.active {
+          display: block;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 0;
+        }
+        nav li {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        nav a {
+          display: block;
+          padding: 1rem;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <!-- Main stylesheet loaded asynchronously -->
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
 
     <!-- Content Security Policy -->
     <meta
@@ -71,15 +217,25 @@
       content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self';"
     />
 
-    <!-- Structured Data -->
+    <!-- Structured Data for SEO & AI -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Retire in Thailand | Retiring in Thailand",
-        "alternateName": ["Retiring in Thailand", "Retire in Thailand Guide"],
+        "alternateName": [
+          "Retiring in Thailand",
+          "Retire in Thailand Guide",
+          "Thailand Retirement Guide"
+        ],
         "description": "The #1 guide for retiring in Thailand. Complete information on visas, cost of living, healthcare, and best retirement locations.",
-        "url": "https://retiringinthailand.com"
+        "url": "https://retiringinthailand.com",
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://retiringinthailand.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
     <script type="application/ld+json">
@@ -89,17 +245,37 @@
         "name": "Retiring in Thailand",
         "url": "https://retiringinthailand.com",
         "logo": "https://retiringinthailand.com/logo.png",
+        "description": "Expert guides and resources for retiring in Thailand",
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "support@retiringinthailand.com",
-          "contactType": "customer service"
+          "contactType": "customer service",
+          "availableLanguage": "English"
         },
         "sameAs": [],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Bangkok",
           "addressCountry": "TH"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Thailand"
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://retiringinthailand.com/"
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -178,6 +354,12 @@
         ]
       }
     </script>
+    <!-- Google AdSense - loaded after page content -->
+    <script
+      defer
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2456627863532019"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Skip to main content link for accessibility -->
@@ -226,21 +408,32 @@
         </div>
       </section>
 
-      <section class="stats">
+      <section
+        class="stats"
+        aria-label="Key statistics about retiring in Thailand"
+      >
         <div class="stat-item">
-          <div class="stat-number">50K+</div>
+          <div class="stat-number" aria-label="Over 50,000 happy expats">
+            50K+
+          </div>
           <div class="stat-label">Happy Expats</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">70%</div>
+          <div class="stat-number" aria-label="70 percent cost savings">
+            70%
+          </div>
           <div class="stat-label">Cost Savings</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">365</div>
+          <div class="stat-number" aria-label="365 sunny days per year">
+            365
+          </div>
           <div class="stat-label">Sunny Days</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">#1</div>
+          <div class="stat-number" aria-label="Number 1 retirement destination">
+            #1
+          </div>
           <div class="stat-label">Retirement Destination</div>
         </div>
       </section>
@@ -254,55 +447,55 @@
         </p>
       </div>
 
-      <section class="features">
-        <div class="feature-card">
-          <span class="icon">🏖️</span>
+      <section class="features" aria-label="Benefits of retiring in Thailand">
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">🏖️</span>
           <h3>Beautiful Locations</h3>
           <p>
             From bustling Bangkok to serene Chiang Mai and pristine beach towns,
             find the perfect place to call home.
           </p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">💰</span>
+        </article>
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">💰</span>
           <h3>Affordable Living</h3>
           <p>
             Live comfortably on $1,500-2,500/month including rent, food,
             healthcare, and entertainment.
           </p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">🏥</span>
+        </article>
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">🏥</span>
           <h3>World-Class Healthcare</h3>
           <p>
             Access JCI-accredited hospitals with English-speaking doctors at a
             fraction of Western prices.
           </p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">📋</span>
+        </article>
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">📋</span>
           <h3>Easy Visa Options</h3>
           <p>
             The Retirement Visa (O-A) allows stays of up to one year, renewable
             indefinitely for those 50+.
           </p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">🍜</span>
+        </article>
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">🍜</span>
           <h3>Amazing Cuisine</h3>
           <p>
             Enjoy delicious, healthy Thai food for just $2-5 per meal at local
             restaurants and markets.
           </p>
-        </div>
-        <div class="feature-card">
-          <span class="icon">😊</span>
+        </article>
+        <article class="feature-card">
+          <span class="icon" aria-hidden="true">😊</span>
           <h3>Friendly Culture</h3>
           <p>
             Experience the legendary Thai hospitality in the "Land of Smiles"
             with a vibrant expat community.
           </p>
-        </div>
+        </article>
       </section>
 
       <section class="locations" id="locations">
@@ -579,38 +772,72 @@
     </footer>
 
     <script>
-      // Header scroll effect
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
+      // Optimized header scroll effect with throttling
+      let ticking = false;
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              const header = document.querySelector("header");
+              if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+              } else {
+                header.classList.remove("scrolled");
+              }
+              ticking = false;
+            });
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
 
-      // Mobile menu toggle
+      // Mobile menu toggle with improved accessibility
       function toggleMenu() {
         const nav = document.getElementById("nav");
         const btn = document.querySelector(".mobile-menu-btn");
         const isExpanded = nav.classList.toggle("active");
         btn.setAttribute("aria-expanded", isExpanded);
         btn.innerHTML = isExpanded ? "✕" : "☰";
+
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = isExpanded ? "hidden" : "";
       }
 
-      // Smooth scroll for anchor links
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const nav = document.getElementById("nav");
+        const btn = document.querySelector(".mobile-menu-btn");
+        if (
+          nav.classList.contains("active") &&
+          !nav.contains(e.target) &&
+          !btn.contains(e.target)
+        ) {
+          nav.classList.remove("active");
+          btn.setAttribute("aria-expanded", "false");
+          btn.innerHTML = "☰";
+          document.body.style.overflow = "";
+        }
+      });
+
+      // Smooth scroll for anchor links with performance optimization
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
             // Close mobile menu if open
-            document.getElementById("nav").classList.remove("active");
-            document
-              .querySelector(".mobile-menu-btn")
-              .setAttribute("aria-expanded", "false");
-            document.querySelector(".mobile-menu-btn").innerHTML = "☰";
+            const nav = document.getElementById("nav");
+            const btn = document.querySelector(".mobile-menu-btn");
+            if (nav.classList.contains("active")) {
+              nav.classList.remove("active");
+              btn.setAttribute("aria-expanded", "false");
+              btn.innerHTML = "☰";
+              document.body.style.overflow = "";
+            }
+
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
       });

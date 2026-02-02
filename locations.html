@@ -2,7 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Performance: DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
+
+    <!-- Mobile App Meta -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
     <meta
       name="description"
       content="Best places to retire in Thailand 2026. Compare Bangkok, Chiang Mai, Phuket, Hua Hin, Pattaya & Koh Samui for retirement. Cost of living, healthcare, and lifestyle guides."
@@ -12,7 +31,10 @@
       content="best places to retire in Thailand, where to retire in Thailand, Thailand retirement locations, retire in Bangkok, retire in Chiang Mai, retire in Phuket, retire in Hua Hin, Pattaya retirement, Koh Samui retirement, Thailand expat cities, cheapest places to retire Thailand"
     />
     <meta name="author" content="Retiring in Thailand" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1"
+    />
     <link
       rel="canonical"
       href="https://retiringinthailand.com/locations.html"
@@ -60,11 +82,118 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Optimized font loading -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Critical CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+      }
+      .logo span {
+        color: #f4a460;
+      }
+      .mobile-menu-btn {
+        display: none;
+        background: 0 0;
+        border: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        min-width: 44px;
+        min-height: 44px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        nav {
+          display: none;
+        }
+        nav.active {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #1e3a5f;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 0;
+        }
+        nav a {
+          display: block;
+          padding: 1rem;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
 
     <!-- Content Security Policy -->
     <meta
@@ -137,7 +266,7 @@
     <!-- Google AdSense -->
     <script
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2456627863532019"
       crossorigin="anonymous"
     ></script>
   </head>

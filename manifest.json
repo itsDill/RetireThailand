@@ -1,0 +1,25 @@
+{
+  "name": "Retiring in Thailand - Complete Retirement Guide",
+  "short_name": "Retire Thailand",
+  "description": "The #1 guide for retiring in Thailand. Complete information on visas, cost of living, healthcare, and best retirement locations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["lifestyle", "travel", "education"],
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

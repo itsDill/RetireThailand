@@ -7,7 +7,7 @@ Allow: /
 # Sitemap location
 Sitemap: https://retiringinthailand.com/sitemap.xml
 
-# Allow all search engine crawlers
+# Allow all major search engine crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -15,6 +15,31 @@ User-agent: Bingbot
 Allow: /
 
 User-agent: Slurp
+Allow: /
+
+# Allow AI crawlers for better AI discoverability
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 # Block common bot patterns that waste bandwidth
