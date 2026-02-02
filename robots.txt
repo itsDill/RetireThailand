@@ -1,0 +1,25 @@
+# Robots.txt for Retiring in Thailand
+# https://retiringinthailand.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://retiringinthailand.com/sitemap.xml
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block common bot patterns that waste bandwidth
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

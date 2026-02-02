@@ -1,0 +1,16 @@
+# ads.txt file for Retiring in Thailand
+# This file is required by Google AdSense
+# Replace PUBLISHER-ID with your actual AdSense publisher ID (ca-pub-XXXXXXXXXXXXXXXX format)
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+# The format is:
+# <SSP/Exchange Domain>, <Publisher Account ID>, <Account/Relationship Type>, <Certification Authority ID>
+#
+# To get your Publisher ID:
+# 1. Sign in to your AdSense account
+# 2. Click on "Account" in the left menu
+# 3. Your Publisher ID is shown as "Publisher ID: ca-pub-XXXXXXXXXXXXXXXX"
+# 4. Use just the numeric portion after "pub-" in this file
+#
+# After updating this file with your real Publisher ID, upload it to your website root.
