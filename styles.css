@@ -220,7 +220,7 @@ textarea:focus-visible {
 .page-hero {
   background:
     linear-gradient(135deg, rgba(30, 58, 95, 0.9), rgba(45, 90, 135, 0.9)),
-    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920")
+    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&q=70")
       center/cover;
   min-height: 40vh;
   display: flex;
@@ -229,6 +229,16 @@ textarea:focus-visible {
   text-align: center;
   color: white;
   padding: 6rem 2rem 3rem;
+}
+
+/* Higher resolution for larger screens */
+@media (min-width: 769px) {
+  .page-hero {
+    background:
+      linear-gradient(135deg, rgba(30, 58, 95, 0.9), rgba(45, 90, 135, 0.9)),
+      url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=75")
+        center/cover;
+  }
 }
 
 .page-hero-content h1 {
@@ -251,7 +261,7 @@ textarea:focus-visible {
 .hero {
   background:
     linear-gradient(135deg, rgba(30, 58, 95, 0.7), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=75")
+    url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&q=70")
       center/cover;
   background-attachment: scroll; /* Better mobile performance */
   min-height: 100vh;
@@ -267,6 +277,16 @@ textarea:focus-visible {
   padding-bottom: max(2rem, env(safe-area-inset-bottom));
   position: relative;
   contain: layout style paint;
+}
+
+/* Load higher resolution hero image on larger screens */
+@media (min-width: 769px) {
+  .hero {
+    background:
+      linear-gradient(135deg, rgba(30, 58, 95, 0.7), rgba(0, 0, 0, 0.5)),
+      url("https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&q=75")
+        center/cover;
+  }
 }
 
 /* Only use parallax on desktop with good performance */
