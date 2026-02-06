@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MQD603YK7V"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MQD603YK7V");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Thailand cost of living calculator 2026. Estimate your monthly expenses in Bangkok, Chiang Mai, Phuket, Pattaya & Hua Hin. Housing, food, healthcare & lifestyle costs."
+    />
+    <meta
+      name="keywords"
+      content="Thailand cost of living calculator, retire Thailand budget, Thailand monthly expenses, Bangkok cost of living, Chiang Mai cost of living, expat budget Thailand"
+    />
+    <meta name="author" content="Retiring in Thailand" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link
+      rel="canonical"
+      href="https://retiringinthailand.com/tools/cost-calculator.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://retiringinthailand.com/tools/cost-calculator.html"
+    />
+    <meta
+      property="og:title"
+      content="Thailand Cost of Living Calculator 2026 | Retirement Budget Tool"
+    />
+    <meta
+      property="og:description"
+      content="Free calculator to estimate your monthly expenses in Thailand. Compare costs across 6 locations and different lifestyles."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Thailand Cost of Living Calculator 2026"
+    />
+    <meta
+      name="twitter:description"
+      content="Estimate your monthly expenses for retiring in Thailand. Compare 6 locations."
+    />
+
+    <title>
+      Thailand Cost of Living Calculator 2026 | Retirement Budget Tool
+    </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1e3a5f" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Critical CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      header {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+      }
+      .logo span {
+        color: #f4a460;
+      }
+      .mobile-menu-btn {
+        display: none;
+        background: 0 0;
+        border: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        min-width: 44px;
+        min-height: 44px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        nav {
+          display: none;
+        }
+        nav.active {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #1e3a5f;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 0;
+        }
+        nav a {
+          display: block;
+          padding: 1rem;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Thailand Cost of Living Calculator",
+        "description": "Calculate your estimated monthly expenses for retiring in Thailand across different locations and lifestyles.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web Browser",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+      <a href="../index.html" class="logo">Retiring in <span>Thailand</span></a>
+      <button
+        class="mobile-menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="nav" role="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../why-thailand.html">Why Thailand</a></li>
+          <li><a href="../locations.html">Locations</a></li>
+          <li><a href="../visa.html">Visa</a></li>
+          <li><a href="../hub.html">Hub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <div class="page-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a> → <a href="../hub.html">Hub</a> →
+            <span>Cost Calculator</span>
+          </nav>
+          <h1>Cost of Living <span>Calculator</span></h1>
+          <p>
+            Estimate your monthly expenses in Thailand based on location and
+            lifestyle
+          </p>
+        </div>
+      </section>
+
+      <!-- Calculator Section -->
+      <section class="tool-section">
+        <div class="container">
+          <div class="calculator-intro">
+            <p>
+              Use our interactive calculator to get a personalized estimate of
+              your monthly costs in Thailand. Adjust the options below to match
+              your expected lifestyle and location preferences.
+            </p>
+          </div>
+
+          <div class="calculator-container">
+            <div class="calculator-form">
+              <div class="calc-group">
+                <label for="location">Preferred Location</label>
+                <select id="location" onchange="calculateCost()">
+                  <option value="bangkok">Bangkok (Urban)</option>
+                  <option value="chiangmai">Chiang Mai</option>
+                  <option value="phuket">Phuket</option>
+                  <option value="pattaya">Pattaya</option>
+                  <option value="huahin">Hua Hin</option>
+                  <option value="kohsamui">Koh Samui</option>
+                  <option value="small">Small Town / Rural</option>
+                </select>
+                <span class="calc-hint"
+                  >Location significantly affects housing and food costs</span
+                >
+              </div>
+
+              <div class="calc-group">
+                <label for="housing">Housing Type</label>
+                <select id="housing" onchange="calculateCost()">
+                  <option value="studio">Studio Apartment</option>
+                  <option value="1bed">1 Bedroom Condo</option>
+                  <option value="2bed">2 Bedroom Condo</option>
+                  <option value="house">House with Garden</option>
+                  <option value="luxury">Luxury Villa / Premium</option>
+                </select>
+              </div>
+
+              <div class="calc-group">
+                <label for="dining">Dining Preference</label>
+                <select id="dining" onchange="calculateCost()">
+                  <option value="local">
+                    Mostly Local Food (street food, Thai restaurants)
+                  </option>
+                  <option value="mixed">Mix of Local & Western</option>
+                  <option value="western">Mostly Western Food</option>
+                  <option value="cooking">Cook at Home (groceries)</option>
+                </select>
+              </div>
+
+              <div class="calc-group">
+                <label for="lifestyle">Overall Lifestyle</label>
+                <select id="lifestyle" onchange="calculateCost()">
+                  <option value="budget">Budget Conscious</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="comfortable">Comfortable</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+              </div>
+
+              <div class="calc-group">
+                <label for="transport">Transportation</label>
+                <select id="transport" onchange="calculateCost()">
+                  <option value="public">Public Transport / Walking</option>
+                  <option value="scooter">Scooter / Motorbike</option>
+                  <option value="car">Own Car</option>
+                  <option value="taxi">Taxis / Grab Regularly</option>
+                </select>
+              </div>
+
+              <div class="calc-group">
+                <label for="insurance">Health Insurance</label>
+                <select id="insurance" onchange="calculateCost()">
+                  <option value="basic">Basic Plan (~$100/mo)</option>
+                  <option value="standard">Standard Plan (~$200/mo)</option>
+                  <option value="premium">Premium Plan (~$350/mo)</option>
+                  <option value="none">No Insurance (Pay-as-you-go)</option>
+                </select>
+                <span class="calc-hint"
+                  >Health insurance is required for retirement visa</span
+                >
+              </div>
+
+              <div class="calc-group">
+                <label for="activities">Activities & Entertainment</label>
+                <select id="activities" onchange="calculateCost()">
+                  <option value="minimal">
+                    Minimal (staying in, free activities)
+                  </option>
+                  <option value="moderate">
+                    Moderate (occasional dining out, movies)
+                  </option>
+                  <option value="active">
+                    Active (golf, gym, regular dining)
+                  </option>
+                  <option value="premium">
+                    Premium (clubs, travel, fine dining)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calculator-result">
+              <h3>Your Estimated Monthly Cost</h3>
+              <div class="result-amount" id="total-cost">$1,650</div>
+              <div class="result-range" id="cost-range">
+                Range: $1,400 - $1,900
+              </div>
+
+              <div class="result-breakdown">
+                <h4>Cost Breakdown</h4>
+                <div class="breakdown-item">
+                  <span>🏠 Housing & Rent</span>
+                  <span id="cost-housing">$500</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>🍽️ Food & Dining</span>
+                  <span id="cost-food">$350</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>🚗 Transportation</span>
+                  <span id="cost-transport">$80</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>🏥 Healthcare & Insurance</span>
+                  <span id="cost-health">$200</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>📱 Utilities & Internet</span>
+                  <span id="cost-utilities">$75</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>🎬 Entertainment & Activities</span>
+                  <span id="cost-entertainment">$200</span>
+                </div>
+                <div class="breakdown-item">
+                  <span>🛒 Other (toiletries, misc)</span>
+                  <span id="cost-other">$245</span>
+                </div>
+              </div>
+
+              <p class="result-note">
+                *Estimates based on 2026 average costs. Actual expenses may vary
+                based on personal spending habits.
+              </p>
+
+              <div class="result-actions">
+                <a href="../locations.html" class="btn">Compare Locations →</a>
+                <a href="../visa.html" class="btn btn-outline"
+                  >Visa Requirements</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cost Comparison Table -->
+      <section class="tool-section alt-bg">
+        <div class="container">
+          <h2>Cost Comparison by Location</h2>
+          <p class="section-intro">
+            Quick reference for typical monthly costs across Thailand's popular
+            retirement destinations.
+          </p>
+
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Location</th>
+                  <th>Budget</th>
+                  <th>Comfortable</th>
+                  <th>Luxury</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Bangkok</strong></td>
+                  <td>$1,200-1,600</td>
+                  <td>$2,000-2,800</td>
+                  <td>$3,500+</td>
+                  <td><a href="../locations/bangkok.html">View Guide →</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Chiang Mai</strong></td>
+                  <td>$800-1,200</td>
+                  <td>$1,400-2,000</td>
+                  <td>$2,500+</td>
+                  <td>
+                    <a href="../locations/chiang-mai.html">View Guide →</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Phuket</strong></td>
+                  <td>$1,200-1,600</td>
+                  <td>$2,000-2,800</td>
+                  <td>$4,000+</td>
+                  <td><a href="../locations/phuket.html">View Guide →</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Pattaya</strong></td>
+                  <td>$900-1,400</td>
+                  <td>$1,600-2,400</td>
+                  <td>$3,200+</td>
+                  <td><a href="../locations/pattaya.html">View Guide →</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Hua Hin</strong></td>
+                  <td>$900-1,300</td>
+                  <td>$1,500-2,200</td>
+                  <td>$3,000+</td>
+                  <td><a href="../locations/hua-hin.html">View Guide →</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Koh Samui</strong></td>
+                  <td>$1,200-1,800</td>
+                  <td>$2,200-3,200</td>
+                  <td>$4,500+</td>
+                  <td>
+                    <a href="../locations/koh-samui.html">View Guide →</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tips Section -->
+      <section class="tool-section">
+        <div class="container">
+          <h2>Cost-Saving Tips</h2>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <span class="tip-icon">🏠</span>
+              <h3>Housing</h3>
+              <ul>
+                <li>Sign 6-12 month leases for 20-40% discounts</li>
+                <li>Consider areas slightly outside city centers</li>
+                <li>Negotiate - most prices have flexibility</li>
+                <li>Check Facebook groups for direct owner listings</li>
+              </ul>
+            </div>
+            <div class="tip-card">
+              <span class="tip-icon">🍜</span>
+              <h3>Food</h3>
+              <ul>
+                <li>Eat at local markets and street food stalls</li>
+                <li>Learn to love Thai food - it's cheaper and healthier</li>
+                <li>Buy groceries at local markets, not imported stores</li>
+                <li>Cook at home a few times a week</li>
+              </ul>
+            </div>
+            <div class="tip-card">
+              <span class="tip-icon">🏥</span>
+              <h3>Healthcare</h3>
+              <ul>
+                <li>Use government hospitals for routine care</li>
+                <li>Get health insurance before turning 70</li>
+                <li>Compare insurance plans annually</li>
+                <li>Consider high-deductible plans for savings</li>
+              </ul>
+            </div>
+            <div class="tip-card">
+              <span class="tip-icon">💰</span>
+              <h3>General</h3>
+              <ul>
+                <li>Use Wise or similar for money transfers</li>
+                <li>Avoid tourist areas for daily shopping</li>
+                <li>Join expat groups for recommendations</li>
+                <li>Time your arrival outside high season</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="hub-cta">
+        <div class="container">
+          <h2>Ready to Start Planning?</h2>
+          <p>
+            Explore our location guides for detailed cost breakdowns and
+            lifestyle information.
+          </p>
+          <div class="cta-buttons">
+            <a href="../locations.html" class="btn">Explore Locations</a>
+            <a href="../hub.html" class="btn btn-outline">Back to Hub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Retiring in <span>Thailand</span></div>
+          <p>Your trusted guide to retiring in the Land of Smiles.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="cost-calculator.html">Cost Calculator</a></li>
+            <li><a href="hospital-directory.html">Hospital Directory</a></li>
+            <li><a href="../guides/golf-thailand.html">Golf Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="../visa.html">Visa Guide</a></li>
+            <li><a href="../locations.html">Locations</a></li>
+            <li><a href="../why-thailand.html">Why Thailand</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Retiring in Thailand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav");
+        const btn = document.querySelector(".mobile-menu-btn");
+        const isExpanded = nav.classList.toggle("active");
+        btn.setAttribute("aria-expanded", isExpanded);
+        btn.innerHTML = isExpanded ? "✕" : "☰";
+      }
+
+      function calculateCost() {
+        const location = document.getElementById("location").value;
+        const housing = document.getElementById("housing").value;
+        const dining = document.getElementById("dining").value;
+        const lifestyle = document.getElementById("lifestyle").value;
+        const transport = document.getElementById("transport").value;
+        const insurance = document.getElementById("insurance").value;
+        const activities = document.getElementById("activities").value;
+
+        // Location multipliers
+        const locationMultipliers = {
+          bangkok: 1.3,
+          chiangmai: 0.85,
+          phuket: 1.2,
+          pattaya: 0.95,
+          huahin: 0.9,
+          kohsamui: 1.25,
+          small: 0.7,
+        };
+
+        // Base costs
+        const housingCosts = {
+          studio: 350,
+          "1bed": 500,
+          "2bed": 750,
+          house: 650,
+          luxury: 1500,
+        };
+
+        const foodCosts = {
+          local: 200,
+          mixed: 350,
+          western: 550,
+          cooking: 280,
+        };
+
+        const transportCosts = {
+          public: 40,
+          scooter: 80,
+          car: 220,
+          taxi: 180,
+        };
+
+        const insuranceCosts = {
+          basic: 100,
+          standard: 200,
+          premium: 350,
+          none: 50,
+        };
+
+        const activityCosts = {
+          minimal: 80,
+          moderate: 180,
+          active: 350,
+          premium: 600,
+        };
+
+        const lifestyleMultipliers = {
+          budget: 0.8,
+          moderate: 1.0,
+          comfortable: 1.3,
+          luxury: 1.8,
+        };
+
+        const locMult = locationMultipliers[location];
+        const lifeMult = lifestyleMultipliers[lifestyle];
+
+        const costHousing = Math.round(housingCosts[housing] * locMult);
+        const costFood = Math.round(foodCosts[dining] * locMult * lifeMult);
+        const costTransport = Math.round(transportCosts[transport] * locMult);
+        const costHealth = insuranceCosts[insurance];
+        const costUtilities = Math.round(75 * locMult);
+        const costEntertainment = Math.round(
+          activityCosts[activities] * lifeMult,
+        );
+        const costOther = Math.round(180 * lifeMult);
+
+        const total =
+          costHousing +
+          costFood +
+          costTransport +
+          costHealth +
+          costUtilities +
+          costEntertainment +
+          costOther;
+        const rangeLow = Math.round(total * 0.85);
+        const rangeHigh = Math.round(total * 1.15);
+
+        document.getElementById("total-cost").textContent =
+          "$" + total.toLocaleString();
+        document.getElementById("cost-range").textContent =
+          "Range: $" +
+          rangeLow.toLocaleString() +
+          " - $" +
+          rangeHigh.toLocaleString();
+        document.getElementById("cost-housing").textContent = "$" + costHousing;
+        document.getElementById("cost-food").textContent = "$" + costFood;
+        document.getElementById("cost-transport").textContent =
+          "$" + costTransport;
+        document.getElementById("cost-health").textContent = "$" + costHealth;
+        document.getElementById("cost-utilities").textContent =
+          "$" + costUtilities;
+        document.getElementById("cost-entertainment").textContent =
+          "$" + costEntertainment;
+        document.getElementById("cost-other").textContent = "$" + costOther;
+      }
+
+      // Initialize calculator on page load
+      document.addEventListener("DOMContentLoaded", calculateCost);
+    </script>
+  </body>
+</html>

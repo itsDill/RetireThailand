@@ -12,7 +12,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-MQD603YK7V");
     </script>
 
@@ -21,35 +20,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Performance: DNS Prefetch -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-    <link rel="dns-prefetch" href="//images.unsplash.com" />
-
-    <!-- Mobile App Meta -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="format-detection" content="telephone=no" />
-
+    <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Thailand retirement resource hub. Free guides, tools, calculators, and community resources for retiring in Thailand. Everything expats need to retire in Thailand successfully."
+      content="Thailand retirement resource hub: Cost of living calculator, hospital directory, golf course guide, housing resources & expat community. Free tools for retiring in Thailand."
     />
     <meta
       name="keywords"
-      content="Thailand retirement resources, retire in Thailand guide, Thailand expat resources, retirement planning Thailand, Thailand retirement community, expat Thailand help, retiring in Thailand tools, Thailand retirement checklist"
+      content="Thailand retirement resources, retire Thailand tools, Thailand cost calculator, Thailand hospitals, Thailand golf courses, Thailand expat community"
     />
     <meta name="author" content="Retiring in Thailand" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1"
-    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://retiringinthailand.com/hub.html" />
 
     <!-- Open Graph -->
@@ -57,26 +39,30 @@
     <meta property="og:url" content="https://retiringinthailand.com/hub.html" />
     <meta
       property="og:title"
-      content="Thailand Retirement Resources & Tools | Retiring in Thailand"
+      content="Thailand Retirement Tools & Resources Hub"
     />
     <meta
       property="og:description"
-      content="Thailand retirement resource hub. Free guides, tools, and community resources for retiring in Thailand successfully."
+      content="Free tools, calculators, hospital directory, and guides for retiring in Thailand successfully."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200"
     />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Thailand Retirement Resources & Tools"
+      content="Thailand Retirement Tools & Resources"
     />
     <meta
       name="twitter:description"
-      content="Free guides, tools, and resources for retiring in Thailand."
+      content="Free calculators, hospital directory, and guides for retiring in Thailand."
     />
 
     <title>
-      Thailand Retirement Resources & Tools | Retiring in Thailand Hub
+      Thailand Retirement Tools & Resources Hub | Retiring in Thailand
     </title>
 
     <!-- Favicon -->
@@ -86,9 +72,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -111,7 +94,6 @@
           sans-serif;
         line-height: 1.6;
         color: #333;
-        -webkit-font-smoothing: antialiased;
       }
       header {
         background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
@@ -186,931 +168,404 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Content Security Policy -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self';"
-    />
-    <script
-      defer
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2456627863532019"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Thailand Retirement Tools & Resources Hub",
+        "description": "Free tools, calculators, hospital directory, and guides for retiring in Thailand.",
+        "publisher": { "@type": "Organization", "name": "Retiring in Thailand" }
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header role="banner">
-      <a href="index.html" class="logo" aria-label="Retiring in Thailand - Home"
-        >Retiring in <span>Thailand</span></a
-      >
+      <a href="index.html" class="logo">Retiring in <span>Thailand</span></a>
       <button
         class="mobile-menu-btn"
         onclick="toggleMenu()"
         aria-label="Toggle navigation menu"
         aria-expanded="false"
-        aria-controls="nav"
       >
         ☰
       </button>
-      <nav id="nav" role="navigation" aria-label="Main navigation">
+      <nav id="nav" role="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="why-thailand.html">Why Thailand</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="visa.html">Visa</a></li>
-          <li><a href="hub.html">Hub</a></li>
+          <li><a href="hub.html" class="active">Hub</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main-content">
+      <!-- Hero Section -->
       <section class="page-hero">
         <div class="page-hero-content">
           <h1>Resource <span>Hub</span></h1>
           <p>
-            Your central destination for Thailand retirement resources and tools
+            Free tools, calculators, and guides to plan your Thailand retirement
           </p>
         </div>
       </section>
 
-      <section class="hub-section">
+      <!-- Featured Tools Section -->
+      <section class="hub-featured">
         <div class="container">
-          <div class="hub-grid">
-            <div class="hub-card">
-              <span class="hub-icon">📚</span>
-              <h3>Retirement Guides</h3>
-              <p>
-                Comprehensive guides covering every aspect of retiring in
-                Thailand, from visa applications to daily life.
-              </p>
-              <ul class="hub-links">
-                <li><a href="visa.html">Visa Requirements Guide</a></li>
-                <li><a href="locations.html">Best Retirement Locations</a></li>
-                <li><a href="why-thailand.html">Why Choose Thailand</a></li>
-              </ul>
-            </div>
+          <h2>Popular Tools</h2>
+          <div class="featured-grid">
+            <!-- Cost Calculator Preview -->
+            <a href="tools/cost-calculator.html" class="featured-card">
+              <div class="featured-icon">💰</div>
+              <div class="featured-content">
+                <h3>Cost of Living Calculator</h3>
+                <p>
+                  Estimate your monthly expenses in Thailand based on location,
+                  lifestyle, and preferences. Covers housing, food, healthcare,
+                  and more.
+                </p>
+                <div class="featured-preview">
+                  <span class="preview-stat">6 locations</span>
+                  <span class="preview-stat">5 lifestyle options</span>
+                  <span class="preview-stat">Instant results</span>
+                </div>
+                <span class="featured-cta">Try Calculator →</span>
+              </div>
+            </a>
 
-            <div class="hub-card" id="healthcare">
-              <span class="hub-icon">🏥</span>
-              <h3>Healthcare Resources</h3>
-              <p>
-                Information about Thailand's world-class healthcare system and
-                insurance options for expats.
-              </p>
-              <ul class="hub-links">
-                <li><a href="#hospital-directory">Hospital Directory</a></li>
-                <li><a href="#hospital-directory">Insurance Providers</a></li>
-                <li>
-                  <a href="why-thailand.html#healthcare">Medical Tourism</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="hub-card" id="financial-planning">
-              <span class="hub-icon">💰</span>
-              <h3>Financial Planning</h3>
-              <p>
-                Tools and resources for budgeting, banking, and managing your
-                finances in Thailand.
-              </p>
-              <ul class="hub-links">
-                <li>
-                  <a href="#cost-calculator">Cost of Living Calculator</a>
-                </li>
-                <li><a href="#housing-guide">Banking Guide</a></li>
-                <li><a href="#visa-checklist">Tax Information</a></li>
-              </ul>
-            </div>
-
-            <div class="hub-card" id="living">
-              <span class="hub-icon">🏠</span>
-              <h3>Housing & Living</h3>
-              <p>
-                Find your perfect home with our housing resources and
-                neighborhood guides.
-              </p>
-              <ul class="hub-links">
-                <li><a href="#housing-guide">Rental Guide</a></li>
-                <li><a href="#housing-guide">Property Purchase</a></li>
-                <li><a href="locations.html">Neighborhood Reviews</a></li>
-              </ul>
-            </div>
-
-            <div class="hub-card" id="community">
-              <span class="hub-icon">👥</span>
-              <h3>Community</h3>
-              <p>
-                Connect with fellow expats and retirees through our community
-                resources.
-              </p>
-              <ul class="hub-links">
-                <li>
-                  <a
-                    href="https://www.thaivisa.com/forum/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Expat Forums</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.internations.org/thailand-expats"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Local Meetups</a
-                  >
-                </li>
-                <li><a href="locations.html">Explore Locations</a></li>
-              </ul>
-            </div>
-
-            <div class="hub-card">
-              <span class="hub-icon">📞</span>
-              <h3>Get Help</h3>
-              <p>
-                Need personalized assistance? Our team is here to help you on
-                your journey.
-              </p>
-              <ul class="hub-links">
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About Our Team</a></li>
-                <li><a href="visa.html">Visa FAQ</a></li>
-              </ul>
-            </div>
+            <!-- Hospital Directory Preview -->
+            <a href="tools/hospital-directory.html" class="featured-card">
+              <div class="featured-icon">🏥</div>
+              <div class="featured-content">
+                <h3>Hospital Directory</h3>
+                <p>
+                  Complete directory of JCI-accredited hospitals and medical
+                  facilities across Thailand. Find English-speaking doctors and
+                  expat-friendly care.
+                </p>
+                <div class="featured-preview">
+                  <span class="preview-stat">50+ hospitals</span>
+                  <span class="preview-stat">JCI accredited</span>
+                  <span class="preview-stat">All regions</span>
+                </div>
+                <span class="featured-cta">Browse Hospitals →</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
+      <!-- Resource Categories -->
+      <section class="hub-categories">
+        <div class="container">
+          <h2>All Resources</h2>
+          <div class="category-grid">
+            <!-- Golf Guide -->
+            <a href="guides/golf-thailand.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">⛳ Sports</span>
+                <h3>Golf Course Guide</h3>
+                <p>
+                  250+ courses across Thailand with green fees from $20-80.
+                  Championship courses, stunning mountain views, and year-round
+                  play.
+                </p>
+                <ul class="category-highlights">
+                  <li>Top courses by region</li>
+                  <li>Green fee comparisons</li>
+                  <li>Membership options</li>
+                  <li>Golf community clubs</li>
+                </ul>
+                <span class="category-cta">Explore Golf Guide →</span>
+              </div>
+            </a>
+
+            <!-- Housing Guide -->
+            <a href="guides/housing-thailand.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">🏠 Living</span>
+                <h3>Housing & Rental Guide</h3>
+                <p>
+                  Everything about renting and buying property in Thailand.
+                  Price comparisons, legal requirements, and property search
+                  tips.
+                </p>
+                <ul class="category-highlights">
+                  <li>Rental price comparisons</li>
+                  <li>Property ownership laws</li>
+                  <li>Best property websites</li>
+                  <li>Lease negotiation tips</li>
+                </ul>
+                <span class="category-cta">View Housing Guide →</span>
+              </div>
+            </a>
+
+            <!-- Expat Community -->
+            <a href="guides/expat-community.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">👥 Community</span>
+                <h3>Expat Community Directory</h3>
+                <p>
+                  Connect with 100,000+ expats and retirees. Forums, Facebook
+                  groups, meetups, clubs, and social events across Thailand.
+                </p>
+                <ul class="category-highlights">
+                  <li>Online forums & groups</li>
+                  <li>Local meetups by city</li>
+                  <li>Expat clubs & societies</li>
+                  <li>Volunteer opportunities</li>
+                </ul>
+                <span class="category-cta">Find Your Community →</span>
+              </div>
+            </a>
+
+            <!-- Visa Checklist -->
+            <a href="visa.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">📋 Essential</span>
+                <h3>Visa & Documentation</h3>
+                <p>
+                  Complete visa guide with interactive checklists. Retirement
+                  visa (O-A), extensions, 90-day reporting, and document
+                  requirements.
+                </p>
+                <ul class="category-highlights">
+                  <li>Interactive checklist</li>
+                  <li>Document templates</li>
+                  <li>Embassy contacts</li>
+                  <li>Extension process</li>
+                </ul>
+                <span class="category-cta">View Visa Guide →</span>
+              </div>
+            </a>
+
+            <!-- Healthcare Guide -->
+            <a href="guides/healthcare-thailand.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">🏥 Healthcare</span>
+                <h3>Healthcare & Insurance Guide</h3>
+                <p>
+                  Navigate Thailand's world-class healthcare system. Insurance
+                  options, costs comparison, and tips for expats over 50.
+                </p>
+                <ul class="category-highlights">
+                  <li>Insurance comparisons</li>
+                  <li>Cost estimates</li>
+                  <li>Pre-existing conditions</li>
+                  <li>Dental & vision care</li>
+                </ul>
+                <span class="category-cta">Read Healthcare Guide →</span>
+              </div>
+            </a>
+
+            <!-- Banking Guide -->
+            <a href="guides/banking-thailand.html" class="category-card">
+              <div
+                class="category-image"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=600&q=80&quot;);
+                "
+              ></div>
+              <div class="category-content">
+                <span class="category-tag">💳 Finance</span>
+                <h3>Banking & Money Guide</h3>
+                <p>
+                  Open a Thai bank account, transfer money internationally, and
+                  manage your finances. Tax considerations for expats.
+                </p>
+                <ul class="category-highlights">
+                  <li>Bank account setup</li>
+                  <li>Money transfer options</li>
+                  <li>Tax considerations</li>
+                  <li>Currency exchange tips</li>
+                </ul>
+                <span class="category-cta">View Banking Guide →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Links Section -->
+      <section class="hub-quicklinks">
+        <div class="container">
+          <h2>Quick Access</h2>
+          <div class="quicklinks-grid">
+            <a href="tools/cost-calculator.html" class="quicklink">
+              <span class="quicklink-icon">💰</span>
+              <span>Cost Calculator</span>
+            </a>
+            <a href="tools/hospital-directory.html" class="quicklink">
+              <span class="quicklink-icon">🏥</span>
+              <span>Hospital Directory</span>
+            </a>
+            <a href="guides/golf-thailand.html" class="quicklink">
+              <span class="quicklink-icon">⛳</span>
+              <span>Golf Courses</span>
+            </a>
+            <a href="guides/housing-thailand.html" class="quicklink">
+              <span class="quicklink-icon">🏠</span>
+              <span>Housing Guide</span>
+            </a>
+            <a href="guides/expat-community.html" class="quicklink">
+              <span class="quicklink-icon">👥</span>
+              <span>Expat Forums</span>
+            </a>
+            <a href="visa.html" class="quicklink">
+              <span class="quicklink-icon">📋</span>
+              <span>Visa Checklist</span>
+            </a>
+            <a href="locations.html" class="quicklink">
+              <span class="quicklink-icon">📍</span>
+              <span>Locations</span>
+            </a>
+            <a href="contact.html" class="quicklink">
+              <span class="quicklink-icon">💬</span>
+              <span>Get Help</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Tools -->
+      <section class="hub-locations">
+        <div class="container">
+          <h2>Explore by Location</h2>
+          <p class="section-subtitle">
+            Detailed guides for Thailand's top retirement destinations
+          </p>
+          <div class="location-cards">
+            <a href="locations/bangkok.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=300&q=80"
+                alt="Bangkok"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Bangkok</h4>
+                <span>$1,500-3,000/mo</span>
+              </div>
+            </a>
+            <a href="locations/chiang-mai.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=300&q=80"
+                alt="Chiang Mai"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Chiang Mai</h4>
+                <span>$1,000-2,000/mo</span>
+              </div>
+            </a>
+            <a href="locations/phuket.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=300&q=80"
+                alt="Phuket"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Phuket</h4>
+                <span>$1,800-3,500/mo</span>
+              </div>
+            </a>
+            <a href="locations/hua-hin.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1540611025311-01df3cef54b5?w=300&q=80"
+                alt="Hua Hin"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Hua Hin</h4>
+                <span>$1,300-2,200/mo</span>
+              </div>
+            </a>
+            <a href="locations/pattaya.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=300&q=80"
+                alt="Pattaya"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Pattaya</h4>
+                <span>$1,500-2,500/mo</span>
+              </div>
+            </a>
+            <a href="locations/koh-samui.html" class="location-mini-card">
+              <img
+                src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=300&q=80"
+                alt="Koh Samui"
+                loading="lazy"
+              />
+              <div class="location-mini-content">
+                <h4>Koh Samui</h4>
+                <span>$2,000-3,500/mo</span>
+              </div>
+            </a>
+          </div>
+          <div class="section-cta">
+            <a href="locations.html" class="btn">Compare All Locations →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
       <section class="hub-cta">
         <div class="container">
-          <h2>Ready to Start Your Journey?</h2>
+          <h2>Start Planning Your Retirement</h2>
           <p>
-            Download our comprehensive retirement guide and get personalized
-            recommendations.
+            Get personalized recommendations and our free retirement planning
+            guide.
           </p>
           <div class="cta-buttons">
-            <a href="#newsletter" class="btn">Get Free Guide</a>
+            <a href="tools/cost-calculator.html" class="btn"
+              >Try Cost Calculator</a
+            >
             <a href="contact.html" class="btn btn-outline">Talk to an Expert</a>
           </div>
         </div>
       </section>
 
-      <!-- Cost of Living Calculator -->
-      <section class="tool-section" id="cost-calculator">
-        <div class="section-header">
-          <h2>💰 Cost of Living Calculator</h2>
-          <p>
-            Estimate your monthly expenses in Thailand based on your lifestyle
-          </p>
-        </div>
-        <div class="calculator-container">
-          <div class="calculator-form">
-            <div class="calc-group">
-              <label for="location">Preferred Location</label>
-              <select id="location" onchange="calculateCost()">
-                <option value="bangkok">Bangkok (Urban)</option>
-                <option value="chiangmai">Chiang Mai</option>
-                <option value="phuket">Phuket</option>
-                <option value="pattaya">Pattaya</option>
-                <option value="huahin">Hua Hin</option>
-                <option value="small">Small Town / Rural</option>
-              </select>
-            </div>
-            <div class="calc-group">
-              <label for="housing">Housing Type</label>
-              <select id="housing" onchange="calculateCost()">
-                <option value="studio">Studio Apartment</option>
-                <option value="1bed">1 Bedroom Condo</option>
-                <option value="2bed">2 Bedroom Condo</option>
-                <option value="house">House with Garden</option>
-                <option value="luxury">Luxury Villa</option>
-              </select>
-            </div>
-            <div class="calc-group">
-              <label for="dining">Dining Preference</label>
-              <select id="dining" onchange="calculateCost()">
-                <option value="local">Mostly Local Food</option>
-                <option value="mixed">Mix of Local & Western</option>
-                <option value="western">Mostly Western Food</option>
-                <option value="cooking">Cook at Home</option>
-              </select>
-            </div>
-            <div class="calc-group">
-              <label for="lifestyle">Lifestyle</label>
-              <select id="lifestyle" onchange="calculateCost()">
-                <option value="budget">Budget Conscious</option>
-                <option value="moderate">Moderate</option>
-                <option value="comfortable">Comfortable</option>
-                <option value="luxury">Luxury</option>
-              </select>
-            </div>
-            <div class="calc-group">
-              <label for="transport">Transportation</label>
-              <select id="transport" onchange="calculateCost()">
-                <option value="public">Public Transport / Walking</option>
-                <option value="scooter">Scooter / Motorbike</option>
-                <option value="car">Own Car</option>
-                <option value="taxi">Taxis / Grab</option>
-              </select>
-            </div>
-            <div class="calc-group">
-              <label for="insurance">Health Insurance</label>
-              <select id="insurance" onchange="calculateCost()">
-                <option value="basic">Basic Plan (~$100/mo)</option>
-                <option value="standard">Standard Plan (~$200/mo)</option>
-                <option value="premium">Premium Plan (~$350/mo)</option>
-                <option value="none">No Insurance (Pay-as-you-go)</option>
-              </select>
-            </div>
-          </div>
-          <div class="calculator-result">
-            <h3>Estimated Monthly Cost</h3>
-            <div class="result-amount" id="total-cost">$1,450</div>
-            <div class="result-breakdown">
-              <div class="breakdown-item">
-                <span>🏠 Housing</span>
-                <span id="cost-housing">$500</span>
-              </div>
-              <div class="breakdown-item">
-                <span>🍽️ Food & Dining</span>
-                <span id="cost-food">$300</span>
-              </div>
-              <div class="breakdown-item">
-                <span>🚗 Transportation</span>
-                <span id="cost-transport">$50</span>
-              </div>
-              <div class="breakdown-item">
-                <span>🏥 Healthcare</span>
-                <span id="cost-health">$100</span>
-              </div>
-              <div class="breakdown-item">
-                <span>📱 Utilities & Internet</span>
-                <span id="cost-utilities">$75</span>
-              </div>
-              <div class="breakdown-item">
-                <span>🎬 Entertainment</span>
-                <span id="cost-entertainment">$150</span>
-              </div>
-              <div class="breakdown-item">
-                <span>🛒 Other Expenses</span>
-                <span id="cost-other">$275</span>
-              </div>
-            </div>
-            <p class="result-note">
-              *Estimates based on average costs. Actual expenses may vary.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Hospital Directory -->
-      <section class="tool-section alt-bg" id="hospital-directory">
-        <div class="section-header">
-          <h2>🏥 Hospital Directory</h2>
-          <p>Top JCI-accredited hospitals and medical facilities for expats</p>
-        </div>
-        <div class="hospital-grid">
-          <div class="hospital-card">
-            <div class="hospital-badge">JCI Accredited</div>
-            <h3>Bumrungrad International</h3>
-            <p class="hospital-location">📍 Bangkok</p>
-            <p>
-              Asia's leading international hospital with 1,400+ physicians.
-              Serves over 1 million patients annually including 520,000+
-              international patients.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ 70+ specialties</li>
-              <li>✓ 40+ interpreter languages</li>
-              <li>✓ International patient center</li>
-              <li>✓ VIP suites available</li>
-            </ul>
-            <a
-              href="https://www.bumrungrad.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-badge">JCI Accredited</div>
-            <h3>Bangkok Hospital</h3>
-            <p class="hospital-location">
-              📍 Bangkok, Pattaya, Phuket, Chiang Mai
-            </p>
-            <p>
-              Part of Thailand's largest private hospital network with locations
-              across the country. Known for cardiology and oncology.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ Multi-location network</li>
-              <li>✓ 24/7 emergency services</li>
-              <li>✓ International medical coordinators</li>
-              <li>✓ Telemedicine available</li>
-            </ul>
-            <a
-              href="https://www.bangkokhospital.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-badge">JCI Accredited</div>
-            <h3>Samitivej Hospital</h3>
-            <p class="hospital-location">📍 Bangkok (Sukhumvit, Srinakarin)</p>
-            <p>
-              Premium hospital group with excellent pediatrics, women's health,
-              and senior care programs.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ Japanese medical center</li>
-              <li>✓ Wellness & preventive care</li>
-              <li>✓ Senior health programs</li>
-              <li>✓ Airport shuttle service</li>
-            </ul>
-            <a
-              href="https://www.samitivejhospitals.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-badge">JCI Accredited</div>
-            <h3>Chiang Mai Ram Hospital</h3>
-            <p class="hospital-location">📍 Chiang Mai</p>
-            <p>
-              Northern Thailand's premier international hospital. Popular with
-              expat retirees in Chiang Mai and surrounding areas.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ Expat-friendly staff</li>
-              <li>✓ Comprehensive checkups</li>
-              <li>✓ Rehabilitation center</li>
-              <li>✓ Dental clinic</li>
-            </ul>
-            <a
-              href="https://www.chiangmairam.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-badge">JCI Accredited</div>
-            <h3>Bangkok Hospital Phuket</h3>
-            <p class="hospital-location">📍 Phuket</p>
-            <p>
-              Southern Thailand's largest private hospital. Ideal for expats
-              living in Phuket, Krabi, and the Andaman coast.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ Hyperbaric chamber</li>
-              <li>✓ Cardiac catheterization</li>
-              <li>✓ Medical tourism packages</li>
-              <li>✓ Insurance partnerships</li>
-            </ul>
-            <a
-              href="https://www.phukethospital.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-badge">Private Hospital</div>
-            <h3>Bangkok Hospital Hua Hin</h3>
-            <p class="hospital-location">📍 Hua Hin</p>
-            <p>
-              Quality healthcare for the popular Hua Hin retirement destination.
-              Part of the Bangkok Hospital network.
-            </p>
-            <ul class="hospital-features">
-              <li>✓ Emergency department</li>
-              <li>✓ General & specialty care</li>
-              <li>✓ Health screening packages</li>
-              <li>✓ English-speaking staff</li>
-            </ul>
-            <a
-              href="https://www.bangkokhospital.com"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-small"
-              >Visit Website →</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Visa Checklist -->
-      <section class="tool-section" id="visa-checklist">
-        <div class="section-header">
-          <h2>📋 Retirement Visa Checklist</h2>
-          <p>
-            Everything you need to prepare for your Thailand Retirement Visa
-            (O-A)
-          </p>
-        </div>
-        <div class="checklist-container">
-          <div class="checklist-column">
-            <h3>📄 Required Documents</h3>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc1" />
-              <label for="doc1">Valid passport (18+ months validity)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc2" />
-              <label for="doc2">Completed visa application form</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc3" />
-              <label for="doc3">Recent passport photos (4x6 cm)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc4" />
-              <label for="doc4">Proof of age (50+ years old)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc5" />
-              <label for="doc5">Police clearance certificate</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc6" />
-              <label for="doc6">Medical certificate (approved form)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="doc7" />
-              <label for="doc7"
-                >Health insurance (min. $100,000 coverage)</label
-              >
-            </div>
-          </div>
-          <div class="checklist-column">
-            <h3>💰 Financial Requirements</h3>
-            <div class="checklist-item">
-              <input type="checkbox" id="fin1" />
-              <label for="fin1">Bank statement (800,000 THB / ~$22,000)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="fin2" />
-              <label for="fin2"
-                >OR: Monthly income proof (65,000 THB / ~$1,800)</label
-              >
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="fin3" />
-              <label for="fin3"
-                >OR: Combination of both (totaling requirement)</label
-              >
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="fin4" />
-              <label for="fin4">Bank letter confirming funds</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="fin5" />
-              <label for="fin5"
-                >Income verification letter (if applicable)</label
-              >
-            </div>
-          </div>
-          <div class="checklist-column">
-            <h3>✅ After Arrival</h3>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr1" />
-              <label for="arr1">90-day reporting registration</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr2" />
-              <label for="arr2">TM30 notification (within 24 hours)</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr3" />
-              <label for="arr3">Open Thai bank account</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr4" />
-              <label for="arr4">Transfer required funds to Thai bank</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr5" />
-              <label for="arr5">Get Thai phone number</label>
-            </div>
-            <div class="checklist-item">
-              <input type="checkbox" id="arr6" />
-              <label for="arr6">Register with your embassy (optional)</label>
-            </div>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 2rem">
-          <a href="visa.html" class="btn">View Complete Visa Guide →</a>
-        </div>
-      </section>
-
-      <!-- Sports & Activities -->
-      <section class="tool-section alt-bg" id="sports-activities">
-        <div class="section-header">
-          <h2>⛳ Sports & Activities</h2>
-          <p>
-            Stay active and enjoy world-class recreational opportunities in
-            Thailand
-          </p>
-        </div>
-        <div class="activities-grid">
-          <div class="activity-card">
-            <div class="activity-icon">⛳</div>
-            <h3>Golf</h3>
-            <p>
-              Thailand is a golfer's paradise with 250+ courses offering
-              stunning views and affordable green fees ($20-80).
-            </p>
-            <div class="activity-highlights">
-              <span>🏆 Championship courses</span>
-              <span>👤 Caddies included</span>
-              <span>☀️ Year-round play</span>
-            </div>
-            <h4>Top Courses:</h4>
-            <ul>
-              <li>Thai Country Club (Bangkok)</li>
-              <li>Alpine Golf Resort (Chiang Mai)</li>
-              <li>Blue Canyon (Phuket)</li>
-              <li>Siam Country Club (Pattaya)</li>
-            </ul>
-          </div>
-          <div class="activity-card">
-            <div class="activity-icon">🏊</div>
-            <h3>Water Sports</h3>
-            <p>
-              Crystal-clear waters and world-famous dive sites make Thailand
-              perfect for water enthusiasts.
-            </p>
-            <div class="activity-highlights">
-              <span>🤿 Scuba diving</span>
-              <span>🏄 Surfing</span>
-              <span>🚣 Kayaking</span>
-            </div>
-            <h4>Top Destinations:</h4>
-            <ul>
-              <li>Similan Islands (Diving)</li>
-              <li>Koh Tao (Learn to dive)</li>
-              <li>Ao Nang (Kayaking)</li>
-              <li>Phuket (Sailing clubs)</li>
-            </ul>
-          </div>
-          <div class="activity-card">
-            <div class="activity-icon">🚴</div>
-            <h3>Cycling & Outdoor</h3>
-            <p>
-              From mountain trails in the north to coastal roads in the south,
-              Thailand offers diverse cycling experiences.
-            </p>
-            <div class="activity-highlights">
-              <span>🏔️ Mountain biking</span>
-              <span>🛤️ Scenic routes</span>
-              <span>👥 Cycling clubs</span>
-            </div>
-            <h4>Popular Routes:</h4>
-            <ul>
-              <li>Mae Hong Son Loop</li>
-              <li>Chiang Mai countryside</li>
-              <li>Bangkok riverside paths</li>
-              <li>Hua Hin coastal roads</li>
-            </ul>
-          </div>
-          <div class="activity-card">
-            <div class="activity-icon">🧘</div>
-            <h3>Wellness & Fitness</h3>
-            <p>
-              Thailand is a wellness destination with affordable gyms, yoga
-              studios, and meditation retreats.
-            </p>
-            <div class="activity-highlights">
-              <span>🧘 Yoga retreats</span>
-              <span>💪 Modern gyms</span>
-              <span>🧖 Thai massage</span>
-            </div>
-            <h4>Popular Activities:</h4>
-            <ul>
-              <li>Yoga retreats (Koh Samui, Chiang Mai)</li>
-              <li>Muay Thai training</li>
-              <li>Tai Chi in parks</li>
-              <li>Meditation temples</li>
-            </ul>
-          </div>
-          <div class="activity-card">
-            <div class="activity-icon">🎾</div>
-            <h3>Tennis & Racquet Sports</h3>
-            <p>
-              Tennis clubs, pickleball courts, and badminton facilities are
-              popular among expat retirees.
-            </p>
-            <div class="activity-highlights">
-              <span>🎾 Tennis clubs</span>
-              <span>🏸 Badminton</span>
-              <span>🏓 Pickleball growing</span>
-            </div>
-            <h4>Facilities:</h4>
-            <ul>
-              <li>Condominium courts</li>
-              <li>Private sports clubs</li>
-              <li>Municipal facilities</li>
-              <li>Expat leagues & tournaments</li>
-            </ul>
-          </div>
-          <div class="activity-card">
-            <div class="activity-icon">📷</div>
-            <h3>Hobbies & Social</h3>
-            <p>
-              Join vibrant expat communities pursuing photography, art, cooking,
-              and cultural activities.
-            </p>
-            <div class="activity-highlights">
-              <span>📷 Photography</span>
-              <span>🎨 Art classes</span>
-              <span>👨‍🍳 Cooking schools</span>
-            </div>
-            <h4>Popular Groups:</h4>
-            <ul>
-              <li>Photography walking tours</li>
-              <li>Thai cooking classes</li>
-              <li>Language exchange meetups</li>
-              <li>Volunteer organizations</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Expat Community Resources -->
-      <section class="tool-section" id="expat-forums">
-        <div class="section-header">
-          <h2>👥 Expat Community Resources</h2>
-          <p>Connect with fellow retirees and join active expat communities</p>
-        </div>
-        <div class="community-grid">
-          <div class="community-card">
-            <h3>🌐 Online Forums</h3>
-            <ul class="community-links">
-              <li>
-                <a
-                  href="https://www.thaivisa.com"
-                  target="_blank"
-                  rel="noopener"
-                  >ThaiVisa Forum</a
-                >
-                - Largest expat community
-              </li>
-              <li>
-                <a
-                  href="https://www.reddit.com/r/Thailand"
-                  target="_blank"
-                  rel="noopener"
-                  >r/Thailand Reddit</a
-                >
-                - Active discussions
-              </li>
-              <li>
-                <a
-                  href="https://www.expatforum.com"
-                  target="_blank"
-                  rel="noopener"
-                  >Expat Forum Thailand</a
-                >
-                - Q&A platform
-              </li>
-            </ul>
-          </div>
-          <div class="community-card">
-            <h3>📱 Facebook Groups</h3>
-            <ul class="community-links">
-              <li>Chiang Mai Expats Club - 50,000+ members</li>
-              <li>Bangkok Expats - Active daily</li>
-              <li>Phuket Expat Community</li>
-              <li>Hua Hin Expats & Friends</li>
-              <li>Thailand Retirement Visa Help</li>
-            </ul>
-          </div>
-          <div class="community-card">
-            <h3>🤝 Expat Clubs & Meetups</h3>
-            <ul class="community-links">
-              <li>Chiang Mai Expats Club - Weekly meetings</li>
-              <li>Pattaya City Expats Club</li>
-              <li>Bangkok Foreign Correspondents Club</li>
-              <li>Rotary & Lions Clubs (multiple cities)</li>
-              <li>Hash House Harriers (running clubs)</li>
-            </ul>
-          </div>
-          <div class="community-card">
-            <h3>🏛️ Embassy Resources</h3>
-            <ul class="community-links">
-              <li>
-                <a href="#" target="_blank" rel="noopener"
-                  >US Embassy Bangkok</a
-                >
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noopener"
-                  >British Embassy Bangkok</a
-                >
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noopener"
-                  >Australian Embassy Bangkok</a
-                >
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="noopener"
-                  >Canadian Embassy Bangkok</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Housing Resources -->
-      <section class="tool-section alt-bg" id="housing-guide">
-        <div class="section-header">
-          <h2>🏠 Housing Guide</h2>
-          <p>
-            Everything you need to know about finding your perfect home in
-            Thailand
-          </p>
-        </div>
-        <div class="housing-info-grid">
-          <div class="housing-info-card">
-            <h3>🏢 Renting vs. Buying</h3>
-            <div class="housing-comparison">
-              <div class="housing-option">
-                <h4>Renting (Recommended)</h4>
-                <ul>
-                  <li>✓ Flexibility to move around</li>
-                  <li>✓ No large upfront investment</li>
-                  <li>✓ Landlord handles maintenance</li>
-                  <li>✓ Try areas before committing</li>
-                  <li>✓ 1-12 month leases available</li>
-                </ul>
-              </div>
-              <div class="housing-option">
-                <h4>Buying (Condos Only)</h4>
-                <ul>
-                  <li>✓ Foreigners can own condos (up to 49%)</li>
-                  <li>✓ Long-term investment potential</li>
-                  <li>✓ No rent payments</li>
-                  <li>⚠️ Cannot own land directly</li>
-                  <li>⚠️ Requires significant capital</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="housing-info-card">
-            <h3>💵 Average Rental Prices</h3>
-            <table class="housing-prices">
-              <tr>
-                <th>Location</th>
-                <th>Studio</th>
-                <th>1 Bedroom</th>
-                <th>2 Bedroom</th>
-              </tr>
-              <tr>
-                <td>Bangkok (Center)</td>
-                <td>$400-600</td>
-                <td>$600-1,000</td>
-                <td>$900-1,500</td>
-              </tr>
-              <tr>
-                <td>Chiang Mai</td>
-                <td>$200-350</td>
-                <td>$350-550</td>
-                <td>$500-800</td>
-              </tr>
-              <tr>
-                <td>Phuket</td>
-                <td>$350-500</td>
-                <td>$500-800</td>
-                <td>$700-1,200</td>
-              </tr>
-              <tr>
-                <td>Hua Hin</td>
-                <td>$250-400</td>
-                <td>$400-650</td>
-                <td>$600-900</td>
-              </tr>
-              <tr>
-                <td>Pattaya</td>
-                <td>$250-400</td>
-                <td>$400-700</td>
-                <td>$600-1,000</td>
-              </tr>
-            </table>
-          </div>
-          <div class="housing-info-card full-width">
-            <h3>🔍 Property Search Websites</h3>
-            <div class="property-sites">
-              <a
-                href="https://www.ddproperty.com"
-                target="_blank"
-                rel="noopener"
-                class="property-link"
-              >
-                <span class="property-name">DDProperty</span>
-                <span class="property-desc">Largest Thai property portal</span>
-              </a>
-              <a
-                href="https://www.hipflat.co.th"
-                target="_blank"
-                rel="noopener"
-                class="property-link"
-              >
-                <span class="property-name">Hipflat</span>
-                <span class="property-desc"
-                  >Modern interface, good filters</span
-                >
-              </a>
-              <a
-                href="https://www.fazwaz.com"
-                target="_blank"
-                rel="noopener"
-                class="property-link"
-              >
-                <span class="property-name">FazWaz</span>
-                <span class="property-desc"
-                  >English-friendly, expat focused</span
-                >
-              </a>
-              <a
-                href="https://www.renthub.in.th"
-                target="_blank"
-                rel="noopener"
-                class="property-link"
-              >
-                <span class="property-name">RentHub</span>
-                <span class="property-desc">Budget-friendly options</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Free Guides Download -->
-      <section class="tool-section" id="free-guides">
-        <div class="section-header">
-          <h2>📚 Free Retirement Guides</h2>
-          <p>
-            Download our comprehensive guides to plan your Thailand retirement
-          </p>
-        </div>
-        <div class="guides-grid">
-          <div class="guide-card">
-            <div class="guide-icon">📖</div>
-            <h3>Complete Retirement Guide</h3>
-            <p>
-              Everything you need to know about retiring in Thailand - 50+ pages
-              covering visa, healthcare, cost of living, and more.
-            </p>
-            <span class="guide-tag">Most Popular</span>
-            <a href="#newsletter" class="btn">Download Free →</a>
-          </div>
-          <div class="guide-card">
-            <div class="guide-icon">🏥</div>
-            <h3>Healthcare Guide</h3>
-            <p>
-              Complete guide to Thailand's healthcare system including hospital
-              comparisons, insurance options, and medical tourism.
-            </p>
-            <a href="#newsletter" class="btn btn-outline">Download Free →</a>
-          </div>
-          <div class="guide-card">
-            <div class="guide-icon">📋</div>
-            <h3>Visa Application Guide</h3>
-            <p>
-              Step-by-step walkthrough of the retirement visa process with
-              document templates and embassy contacts.
-            </p>
-            <a href="#newsletter" class="btn btn-outline">Download Free →</a>
-          </div>
-          <div class="guide-card">
-            <div class="guide-icon">🗺️</div>
-            <h3>Location Comparison Guide</h3>
-            <p>
-              In-depth comparison of the best retirement locations including
-              costs, lifestyle, healthcare, and expat community.
-            </p>
-            <a href="#newsletter" class="btn btn-outline">Download Free →</a>
-          </div>
-        </div>
-      </section>
-
+      <!-- Newsletter -->
       <section class="newsletter" id="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
+        <h2>Get Our Free Retirement Guide</h2>
         <p>
-          Get our free retirement guide and weekly tips delivered to your inbox.
+          50+ pages covering visa, healthcare, cost of living, and location
+          comparisons.
         </p>
         <form
           class="newsletter-form"
@@ -1120,7 +575,7 @@
           "
         >
           <input type="email" placeholder="Enter your email address" required />
-          <button type="submit">Get Free Guide</button>
+          <button type="submit">Download Free Guide</button>
         </form>
       </section>
     </main>
@@ -1129,212 +584,50 @@
       <div class="footer-content">
         <div class="footer-section">
           <div class="footer-logo">Retiring in <span>Thailand</span></div>
-          <p>
-            Your trusted guide to retiring in the Land of Smiles. We help
-            thousands of expats make their dream retirement a reality.
-          </p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="YouTube">▶️</a>
-          </div>
+          <p>Your trusted guide to retiring in the Land of Smiles.</p>
         </div>
         <div class="footer-section">
-          <h4>Quick Links</h4>
+          <h4>Tools</h4>
           <ul>
-            <li><a href="visa.html">Retirement Visa Guide</a></li>
-            <li><a href="locations.html">Location Comparisons</a></li>
-            <li><a href="why-thailand.html">Why Thailand</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Service</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact Us</h4>
-          <ul>
+            <li><a href="tools/cost-calculator.html">Cost Calculator</a></li>
             <li>
-              <a href="mailto:support@retiringinthailand.com"
-                >support@retiringinthailand.com</a
-              >
+              <a href="tools/hospital-directory.html">Hospital Directory</a>
             </li>
-            <li><a href="contact.html">Send a Message</a></li>
-            <li><a href="about.html">About Our Team</a></li>
+            <li><a href="guides/golf-thailand.html">Golf Guide</a></li>
+            <li><a href="guides/housing-thailand.html">Housing Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="visa.html">Visa Guide</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="guides/expat-community.html">Expat Community</a></li>
+            <li><a href="why-thailand.html">Why Thailand</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>
-          &copy; 2026 Retiring in Thailand. All rights reserved. |
-          <a href="privacy.html">Privacy Policy</a> |
-          <a href="terms.html">Terms of Service</a> |
-          <a href="disclaimer.html">Disclaimer</a>
-        </p>
+        <p>&copy; 2026 Retiring in Thailand. All rights reserved.</p>
       </div>
     </footer>
 
     <script>
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-
       function toggleMenu() {
         const nav = document.getElementById("nav");
         const btn = document.querySelector(".mobile-menu-btn");
         const isExpanded = nav.classList.toggle("active");
         btn.setAttribute("aria-expanded", isExpanded);
         btn.innerHTML = isExpanded ? "✕" : "☰";
-      }
-
-      // Active navigation
-      (function () {
-        const currentPage =
-          window.location.pathname.split("/").pop() || "index.html";
-        document.querySelectorAll("nav a").forEach((link) => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-            link.setAttribute("aria-current", "page");
-          }
-        });
-      })();
-
-      // Cost of Living Calculator
-      function calculateCost() {
-        const location = document.getElementById("location").value;
-        const housing = document.getElementById("housing").value;
-        const dining = document.getElementById("dining").value;
-        const lifestyle = document.getElementById("lifestyle").value;
-        const transport = document.getElementById("transport").value;
-        const insurance = document.getElementById("insurance").value;
-
-        // Location multipliers
-        const locationMultipliers = {
-          bangkok: 1.3,
-          chiangmai: 0.85,
-          phuket: 1.15,
-          pattaya: 0.95,
-          huahin: 0.9,
-          small: 0.7,
-        };
-
-        // Base costs
-        const housingCosts = {
-          studio: 350,
-          "1bed": 500,
-          "2bed": 750,
-          house: 600,
-          luxury: 1500,
-        };
-
-        const foodCosts = {
-          local: 200,
-          mixed: 350,
-          western: 500,
-          cooking: 250,
-        };
-
-        const transportCosts = {
-          public: 40,
-          scooter: 80,
-          car: 200,
-          taxi: 150,
-        };
-
-        const insuranceCosts = {
-          basic: 100,
-          standard: 200,
-          premium: 350,
-          none: 50,
-        };
-
-        const lifestyleMultipliers = {
-          budget: 0.8,
-          moderate: 1.0,
-          comfortable: 1.3,
-          luxury: 1.8,
-        };
-
-        const locMult = locationMultipliers[location];
-        const lifeMult = lifestyleMultipliers[lifestyle];
-
-        const costHousing = Math.round(housingCosts[housing] * locMult);
-        const costFood = Math.round(foodCosts[dining] * locMult * lifeMult);
-        const costTransport = Math.round(transportCosts[transport] * locMult);
-        const costHealth = insuranceCosts[insurance];
-        const costUtilities = Math.round(75 * locMult);
-        const costEntertainment = Math.round(150 * lifeMult);
-        const costOther = Math.round(200 * lifeMult);
-
-        const total =
-          costHousing +
-          costFood +
-          costTransport +
-          costHealth +
-          costUtilities +
-          costEntertainment +
-          costOther;
-
-        document.getElementById("total-cost").textContent =
-          "$" + total.toLocaleString();
-        document.getElementById("cost-housing").textContent = "$" + costHousing;
-        document.getElementById("cost-food").textContent = "$" + costFood;
-        document.getElementById("cost-transport").textContent =
-          "$" + costTransport;
-        document.getElementById("cost-health").textContent = "$" + costHealth;
-        document.getElementById("cost-utilities").textContent =
-          "$" + costUtilities;
-        document.getElementById("cost-entertainment").textContent =
-          "$" + costEntertainment;
-        document.getElementById("cost-other").textContent = "$" + costOther;
-      }
-
-      // Initialize calculator on page load
-      document.addEventListener("DOMContentLoaded", calculateCost);
-    </script>
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-consent" class="cookie-consent">
-      <div class="cookie-content">
-        <p>
-          We use cookies to enhance your experience and display personalized
-          ads. By continuing to use our site, you agree to our
-          <a href="privacy.html">Privacy Policy</a>.
-        </p>
-        <div class="cookie-buttons">
-          <button onclick="acceptCookies()" class="btn btn-small">
-            Accept All
-          </button>
-          <button onclick="declineCookies()" class="btn btn-small btn-outline">
-            Decline
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function acceptCookies() {
-        localStorage.setItem("cookieConsent", "accepted");
-        document.getElementById("cookie-consent").style.display = "none";
-      }
-      function declineCookies() {
-        localStorage.setItem("cookieConsent", "declined");
-        document.getElementById("cookie-consent").style.display = "none";
-      }
-      if (localStorage.getItem("cookieConsent")) {
-        document.getElementById("cookie-consent").style.display = "none";
       }
     </script>
   </body>
