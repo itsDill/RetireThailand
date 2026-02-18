@@ -259,6 +259,18 @@
             "position": 5,
             "name": "Pattaya",
             "description": "Vibrant nightlife, beaches, large expat community"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Koh Samui",
+            "description": "Tropical island paradise, wellness retreats, stunning beaches"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Koh Sichang",
+            "description": "Hidden gem, authentic Thai island life, ultra-affordable"
           }
         ]
       }
@@ -416,6 +428,17 @@
             <div class="overlay">
               <h3>Koh Samui</h3>
               <p>Tropical island, wellness retreats, stunning beaches</p>
+            </div>
+          </a>
+          <a href="locations/koh-sichang.html" class="location-card">
+            <img
+              src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=600"
+              alt="Koh Sichang authentic Thai island"
+              loading="lazy"
+            />
+            <div class="overlay">
+              <h3>Koh Sichang</h3>
+              <p>Hidden gem, authentic Thai life, ultra-affordable</p>
             </div>
           </a>
         </div>
@@ -785,13 +808,14 @@
         </div>
       </section>
 
-      <!-- Pattaya & Koh Samui Brief Sections -->
+      <!-- Pattaya, Koh Samui & Hidden Gems -->
       <section class="location-brief-section">
         <div class="section-header">
-          <h2>More Popular Destinations</h2>
+          <h2>More Destinations</h2>
+          <p>Island paradises and hidden gems for every budget</p>
         </div>
         <div class="brief-grid">
-          <div class="brief-card" id="pattaya">
+          <a href="locations/pattaya.html" class="brief-card" id="pattaya">
             <img
               src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600"
               alt="Pattaya"
@@ -810,9 +834,10 @@
                 <span>🏥 Good hospitals</span>
                 <span>✈️ Near Bangkok airport</span>
               </div>
+              <span class="brief-cta">Explore Pattaya →</span>
             </div>
-          </div>
-          <div class="brief-card" id="koh-samui">
+          </a>
+          <a href="locations/koh-samui.html" class="brief-card" id="koh-samui">
             <img
               src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
               alt="Koh Samui"
@@ -832,17 +857,46 @@
                 <span>🏥 Bangkok Hospital Samui</span>
                 <span>✈️ Own airport</span>
               </div>
+              <span class="brief-cta">Explore Koh Samui →</span>
             </div>
-          </div>
+          </a>
+          <a
+            href="locations/koh-sichang.html"
+            class="brief-card"
+            id="koh-sichang"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=600"
+              alt="Koh Sichang"
+              loading="lazy"
+            />
+            <div class="brief-content">
+              <h3>🏝️ Koh Sichang</h3>
+              <p class="brief-tagline">Thailand's hidden gem</p>
+              <p>
+                A tiny island just 1.5 hours from Bangkok offering the lowest
+                cost island living in Thailand. Zero tourists, authentic Thai
+                village life, and incredibly affordable. Perfect for adventurous
+                retirees seeking full cultural immersion.
+              </p>
+              <div class="brief-stats">
+                <span>💰 $800-1,200/mo</span>
+                <span>🏥 Mainland hospitals nearby</span>
+                <span>⛴️ 45-min ferry to Si Racha</span>
+              </div>
+              <span class="brief-cta">Explore Koh Sichang →</span>
+            </div>
+          </a>
         </div>
       </section>
 
       <!-- Comparison Table Section -->
       <section class="info-section" id="comparison">
         <div class="section-header">
-          <h2>📊 Location Comparison</h2>
+          <h2>📊 Complete Location Comparison</h2>
           <p>
-            Compare all destinations side by side to find your perfect match
+            Compare all 7 retirement destinations side by side to find your
+            perfect match
           </p>
         </div>
         <div class="comparison-table-container">
@@ -854,15 +908,21 @@
                 <th>Chiang Mai</th>
                 <th>Phuket</th>
                 <th>Hua Hin</th>
+                <th>Pattaya</th>
+                <th>Koh Samui</th>
+                <th>Koh Sichang</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>💰 Monthly Budget</strong></td>
                 <td>$1,800-3,000</td>
-                <td class="highlight">$1,200-2,000</td>
+                <td>$1,200-2,000</td>
                 <td>$1,500-2,800</td>
                 <td>$1,300-2,200</td>
+                <td>$1,200-2,500</td>
+                <td>$2,000-3,500</td>
+                <td class="highlight">$800-1,200</td>
               </tr>
               <tr>
                 <td><strong>🌡️ Climate</strong></td>
@@ -870,6 +930,9 @@
                 <td class="highlight">Cooler mountains</td>
                 <td>Tropical beach</td>
                 <td>Warm coastal</td>
+                <td>Hot coastal</td>
+                <td>Tropical island</td>
+                <td>Tropical island</td>
               </tr>
               <tr>
                 <td><strong>🏥 Healthcare</strong></td>
@@ -877,6 +940,9 @@
                 <td>Very Good</td>
                 <td>Very Good</td>
                 <td>Good</td>
+                <td>Very Good</td>
+                <td>Good</td>
+                <td>Basic (mainland)</td>
               </tr>
               <tr>
                 <td><strong>✈️ Airport</strong></td>
@@ -884,11 +950,17 @@
                 <td>Regional</td>
                 <td>International</td>
                 <td>None (use Bangkok)</td>
+                <td>Near Bangkok</td>
+                <td>Own airport</td>
+                <td>Near Bangkok</td>
               </tr>
               <tr>
                 <td><strong>🏖️ Beach Access</strong></td>
                 <td>Day trips only</td>
                 <td>None</td>
+                <td class="highlight">Excellent</td>
+                <td>Good</td>
+                <td>Good</td>
                 <td class="highlight">Excellent</td>
                 <td>Good</td>
               </tr>
@@ -898,6 +970,9 @@
                 <td>Good</td>
                 <td>Very Good</td>
                 <td class="highlight">Excellent</td>
+                <td>Very Good</td>
+                <td>Limited</td>
+                <td>None</td>
               </tr>
               <tr>
                 <td><strong>🎭 Nightlife</strong></td>
@@ -905,6 +980,9 @@
                 <td>Moderate</td>
                 <td>Very Good</td>
                 <td>Limited</td>
+                <td class="highlight">Excellent</td>
+                <td>Moderate</td>
+                <td>None</td>
               </tr>
               <tr>
                 <td><strong>👥 Expat Community</strong></td>
@@ -912,6 +990,9 @@
                 <td class="highlight">Very Large</td>
                 <td>Large</td>
                 <td>Medium</td>
+                <td>Very Large</td>
+                <td>Medium</td>
+                <td>Very Small</td>
               </tr>
               <tr>
                 <td><strong>🚗 Transport</strong></td>
@@ -919,6 +1000,19 @@
                 <td>Car/bike needed</td>
                 <td>Car/bike needed</td>
                 <td>Car needed</td>
+                <td>Songthaew/bike</td>
+                <td>Scooter needed</td>
+                <td>Walk/bike</td>
+              </tr>
+              <tr>
+                <td><strong>🇹🇭 Authenticity</strong></td>
+                <td>Low</td>
+                <td>Medium</td>
+                <td>Low</td>
+                <td>Medium</td>
+                <td>Low</td>
+                <td>Medium</td>
+                <td class="highlight">Very High</td>
               </tr>
               <tr>
                 <td><strong>⭐ Best For</strong></td>
@@ -926,6 +1020,9 @@
                 <td>Budget retirees</td>
                 <td>Beach lovers</td>
                 <td>Golfers</td>
+                <td>Nightlife fans</td>
+                <td>Island seekers</td>
+                <td>Adventurers</td>
               </tr>
             </tbody>
           </table>
