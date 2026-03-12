@@ -1,8 +1,6 @@
 # ads.txt file for Retiring in Thailand
-# This file is required by Google AdSense
-# Replace PUBLISHER-ID with your actual AdSense publisher ID (ca-pub-XXXXXXXXXXXXXXXX format)
 
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-2456627863532019, DIRECT, f08c47fec0942fa0
 
 # The format is:
 # <SSP/Exchange Domain>, <Publisher Account ID>, <Account/Relationship Type>, <Certification Authority ID>
