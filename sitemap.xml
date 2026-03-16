@@ -85,6 +85,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://retiringinthailand.com/locations/koh-chang.html</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Guide Pages -->
   <url>
     <loc>https://retiringinthailand.com/guides/healthcare-thailand.html</loc>
@@ -154,5 +160,30 @@
     <lastmod>2026-02-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://retiringinthailand.com/blog.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://retiringinthailand.com/blog/chiang-mai-vs-hua-hin-retirement.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://retiringinthailand.com/blog/thailand-retirement-mistakes.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://retiringinthailand.com/blog/retire-thailand-2000-month.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

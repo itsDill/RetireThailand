@@ -7080,3 +7080,41 @@ footer li::before {
   outline: 2px solid white;
   outline-offset: -4px;
 }
+
+/* Blog card hover */
+.blog-card {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Mobile: page-hero text + blog adjustments */
+@media (max-width: 768px) {
+  .page-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .page-hero {
+    padding: 5rem 1.5rem 2.5rem;
+    min-height: 30vh;
+  }
+
+  .blog-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero-content p {
+    font-size: 1rem;
+  }
+
+  .page-hero {
+    padding: 4.5rem 1rem 2rem;
+  }
+}
